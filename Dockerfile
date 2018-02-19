@@ -45,8 +45,8 @@ RUN echo "tclsh /usr/local/oommf/oommf.tcl \"\$@\"" >> oommf
 RUN chmod a+x oommf
 
 # Install JOOMMF
-RUN pip3 install oommfc -U
-RUN pip3 install oommfodt -U
+RUN pip3 install git+https://github.com/davidcortesortuno/oommfc.git -U
+RUN pip3 install git+https://github.com/davidcortesortuno/oommfodt.git -U
 
 # Headless Matplotlib:
 ENV MPLBACKEND=Agg
