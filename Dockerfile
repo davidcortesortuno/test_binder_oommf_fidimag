@@ -52,7 +52,7 @@ RUN pip3 install oommfodt -U
 ENV MPLBACKEND=Agg
 
 # Set threads for OpenMP:
-# ENV OMP_NUM_THREADS=2
+ENV OMP_NUM_THREADS=2
 # WORKDIR /io
 
 # User to make Binder happy
