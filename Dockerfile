@@ -71,6 +71,8 @@ USER root
 RUN chown -R ${NB_UID} ${HOME}
 USER ${NB_USER}
 
+WORKDIR /home/${USER}
+
 # Set up user so that we do not run as root
 # (not necessary if we run docker with --user)
 # -s for shell, -m to create home directory, -G groups
